@@ -71,14 +71,19 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: fit-content;
-  margin: 0 auto 2rem auto;
+  width: 100%;
+  margin: 0 auto -4rem auto;
+  min-height: 300px;
 }
 
 .symbol-gold {
   display: block;
   margin: 0 auto;
   z-index: 1;
+  position: relative;
+  width: 400px;
+  height: 320px;
+  object-fit: contain;
 }
 
 .side-image.attached {
@@ -88,26 +93,22 @@ html, body {
 
 .absolute-symbol {
   position: absolute;
-  left: 100%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
   width: 120px;
   height: 120px;
-}
-
-.absolute-symbol.left-symbol {
-  left: auto;
-  right: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  object-fit: contain;
 }
 
 .absolute-symbol.right-symbol {
-  left: 100%;
+  right: calc(50% - 230px);
+  left: auto;
+}
+
+.absolute-symbol.left-symbol {
+  left: calc(50% - 200px);
   right: auto;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .coming-soon {
@@ -118,7 +119,7 @@ html, body {
   color: transparent;
   font-size: 4rem;
   font-weight: 700;
-  margin: 0 0 1.2rem 0;
+  margin: 0;
   text-align: center;
   letter-spacing: 2px;
   font-family: 'Playfair Display', serif;

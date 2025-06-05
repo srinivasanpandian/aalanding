@@ -1,6 +1,6 @@
 import React from 'react';
 import './LandingPage.css';
-import logo from './img/logo.jpeg';
+import logo from './img/athidhi-logo.png';
 import logosymbol from './img/logosymbol.jpeg';
 import qrCode from './img/qr.svg';
 
@@ -10,7 +10,7 @@ const LandingPage = () => {
       <div className="main-content">
         <div className="center-content">
           <div className="logo-absolute-center">
-            <img src={logosymbol} alt="Side Right" className="side-image absolute-symbol right-symbol" />
+            {/* <img src={logosymbol} alt="Side Right" className="side-image absolute-symbol right-symbol" /> */}
             <img src={logo} alt="Symbol" className="symbol-gold" />
           </div>
           <h1 className="coming-soon">Coming Soon</h1>
