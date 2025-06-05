@@ -136,7 +136,7 @@ html, body {
 .info-section {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 3rem;
   margin: 0 auto;
   max-width: 900px;
@@ -151,7 +151,11 @@ html, body {
   flex: 1 1 0;
   color: #fff;
   min-width: 260px;
+  min-height: 380px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact-details h2, .menu-qr h2 {
@@ -224,6 +228,7 @@ html, body {
   .contact-details, .menu-qr {
     width: 100%;
     min-width: unset;
+    min-height: 220px;
     text-align: center;
     padding: 2rem 0.5rem;
   }
