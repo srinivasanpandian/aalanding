@@ -21,6 +21,9 @@
 }
 
 .center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
 }
@@ -38,6 +41,55 @@
   height: 220px;
   object-fit: cover;
   box-sizing: border-box;
+}
+
+.logo-center-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.logo-absolute-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto 2rem auto;
+}
+
+.symbol-gold {
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.side-image.attached {
+  margin: 0;
+  display: block;
+}
+
+.absolute-symbol {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+}
+
+.left-symbol {
+  left: -120px;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.right-symbol {
+  left: 100%;
 }
 
 .coming-soon {
@@ -217,5 +269,15 @@
   .footer {
     font-size: 1rem;
     padding: 0.8rem 0;
+  }
+  .logo-absolute-center {
+    margin-bottom: 1.2rem;
+  }
+  .absolute-symbol {
+    width: 60px;
+    height: 60px;
+  }
+  .left-symbol {
+    left: -60px;
   }
 } 
