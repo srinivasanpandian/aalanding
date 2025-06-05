@@ -1,5 +1,8 @@
 import React from 'react';
 import './LandingPage.css';
+import logo from './img/logo.jpeg';
+import logosymbol from './img/logosymbol.jpeg';
+import qrCode from './img/qr.svg';
 
 const LandingPage = () => {
   return (
@@ -7,9 +10,8 @@ const LandingPage = () => {
       <div className="main-content">
         <div className="center-content">
           <div className="logo-absolute-center">
-            <img src="img/logosymbol.jpeg" alt="Side Left" className="side-image absolute-symbol left-symbol" />
-            <img src="img/logo.jpeg" alt="Symbol" className="symbol-gold" />
-            <img src="img/logosymbol.jpeg" alt="Side Right" className="side-image absolute-symbol right-symbol" />
+            <img src={logosymbol} alt="Side Right" className="side-image absolute-symbol right-symbol" />
+            <img src={logo} alt="Symbol" className="symbol-gold" />
           </div>
           <h1 className="coming-soon">Coming Soon</h1>
           <p className="subtitle">Get ready everyone! We are currently working on something awesome.</p>
@@ -26,7 +28,7 @@ const LandingPage = () => {
           </div>
           <div className="menu-qr">
             <h2>Menu QR Code</h2>
-            <img src="img/qr.svg" alt="Menu QR Code" className="qr-image" />
+            <img src={qrCode} alt="Menu QR Code" className="qr-image" />
           </div>
         </div>
       </div>
